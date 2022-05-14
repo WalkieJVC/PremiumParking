@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="_rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#DragWindow" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.premiumparking.InitializerController">
+    <center>
+        <AnchorPane prefHeight="250.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <ImageView fitHeight="250.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../ImageFiles/InitializerBG.png" />
+         </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="34.0" layoutX="185.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../ImageFiles/WalkieJVCLogo.png" />
+            </ImageView>
+            <Button id="_noBackgroundButton" layoutX="355.0" layoutY="10.0" mnemonicParsing="false" onAction="#QuitApplication" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="X" textFill="#b5b5b5">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="18.0" />
+                </font>
+            </Button>
+            <Button id="_noBackgroundButton" alignment="CENTER" layoutX="314.0" layoutY="10.0" mnemonicParsing="false" onAction="#MinimizeApplication" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: transparent;" text="—" textFill="#b5b5b5">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="18.0" />
+                </font>
+            </Button>
+            <Label layoutX="227.0" layoutY="76.0" text="Welcome To" textFill="WHITE">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="23.0" />
+                </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="94.0" text="Premium Parking" textFill="WHITE">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="39.0" />
+                </font>
+            </Label>
+            <Button id="_initialize" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="170.0" mnemonicParsing="false" onAction="#InitializeGarage" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="Initialize Application" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="15.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+    </center>
+</BorderPane>
